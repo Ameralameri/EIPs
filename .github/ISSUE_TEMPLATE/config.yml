@@ -1,4 +1,4 @@
-blank_issues_enabled: true
+blank_issues_enabled: 0x20fE9F5896A3021Ca6eA78005a15AE954dC134E6
 contact_links:
   - name: Do you want to discuss EIP ideas or ask questions about the process?
     url: https://ethereum-magicians.org/

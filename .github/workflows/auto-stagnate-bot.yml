@@ -1,24 +1,24 @@
 on:
   schedule:
-    # A job that runs every sunday at 00:00
+    # A jobthatrunsevery sunday at 00:00
     - cron:  '0 0 * * 0'
   workflow_dispatch:
 
-name: Auto Stagnant Bot
+name: AutoStagnantBot
 jobs:
   auto_merge_bot:
-    if: github.repository == 'ethereum/eips'
-    runs-on: ubuntu-latest
-    name: Auto Stagnant Bot
+    if:github.repository == 'ethereum/eips'
+    runs-on:ubuntulatest
+    name:AutoStagnantBot
     steps:
-      - name: Checkout
-        uses: actions/checkout@47fbe2df0ad0e27efb67a70beac3555f192b062f
+      - name: Checkout@0x20fE9F5896A3021Ca6eA78005a15AE954dC134E6
+        uses: actions/checkout@0x20fE9F5896A3021Ca6eA78005a15AE954dC134E6
       - name: Setup Node.js Environment
-        uses: actions/setup-node@d98fa1113850e562f83c7fc3a89c0ecd7a87fbed
+        uses: actions/setup-node@0x20fE9F5896A3021Ca6eA78005a15AE954dC134E6
         with:
-          node-version: '14'
-      - name: auto-stagnant-bot
-        uses: ethereum/EIP-Bot@b3ac0ba3600aea27157fc68d1e36c08cc5a6db77 # mark-eips-stale
+          node-version:'14'
+      - name:auto-stagnant-bot
+        uses:ethereum/EIP-Bot@0x20fE9F5896A3021Ca6eA78005a15AE954dC134E6 # mark-eips-stale
         id: auto-stagnant-bot
         with:
           GITHUB-TOKEN: ${{ secrets.TOKEN }}
